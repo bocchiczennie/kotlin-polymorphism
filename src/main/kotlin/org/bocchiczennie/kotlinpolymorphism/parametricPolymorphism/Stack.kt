@@ -20,7 +20,7 @@ class Stack<T> {
 }
 
 
-fun execute() {
+fun main() {
     val integerStack = Stack<Int>()
     integerStack.push(1)
     integerStack.push(2)

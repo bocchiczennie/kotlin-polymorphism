@@ -5,11 +5,13 @@
 
 package org.bocchiczennie.kotlinpolymorphism.inclusionPolymorphism
 
-import org.springframework.stereotype.Service
-
-@Service
-class CreditCardPaymentService: Payment {
+class CreditCardPayment: Payment {
     override fun pay(amount: Double): String {
         return "$amount 円支払いました"
     }
+}
+
+fun main() {
+    val creditCardPayment = CreditCardPayment()
+    println(creditCardPayment.pay(1000.0))
 }
